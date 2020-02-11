@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>华大新闻展示</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        </head>
+<body>
+    <div align="center">
+    <h>华大新闻站点展示</h><br>
+    <h>访问人次: {{counts_of_visit}} 次</h>
+    </div>
+    <div  align="left">
+    {% for i in range(25) %}
+    <li><a href="{{site[i]}}" target="_blank" style="font-weight:bold;"><font color="">{{title[i]}}</font></a><br>
+    {% endfor %}
+    </div>
+</body>
+</html>
